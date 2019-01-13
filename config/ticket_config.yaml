@@ -71,7 +71,7 @@ set:
 ticket_black_list_time: 5
 
 # 自动打码
-is_auto_code: True
+is_auto_code: False
 
 # 打码平台， 2 为若快平台（目前只支持若快平台打码，打码兔已经关闭）, 若快注册地址：http://www.ruokuai.com/client/index?6726
 auto_code_type: 2
@@ -106,11 +106,11 @@ email_conf:
 is_cdn: 1
 
 # 下单接口分为两种，1 为快速下单，2 是普通下单
-order_type: 2
+order_type: 1
 
 # 下单模式 1 为预售，整点刷新，刷新间隔0.1-0.5S, 然后会校验时间，比如12点的预售，那脚本就会在12.00整检票，刷新订单
 #         2 是捡漏，捡漏的刷新间隔时间为0.5-3秒，时间间隔长，不容易封ip
-order_model: 1
+order_model: 2
 
 # 预售放票时间, 如果是捡漏模式，可以忽略此操作
 open_time: '18:00:00'
