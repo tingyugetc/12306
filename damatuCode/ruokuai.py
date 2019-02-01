@@ -8,8 +8,8 @@ class RClient(object):
     def __init__(self, username, password):
         self.username = username
         self.password = md5(password).hexdigest()
-        self.soft_id = '96061'
-        self.soft_key = '6facb9da7bb645ad9c4a229464b2cf89'
+        self.soft_id = '120562'
+        self.soft_key = '66a1b459e74b4fca98b09feb985936e2'
         self.base_params = {
             'username': self.username,
             'password': self.password,

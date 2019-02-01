@@ -5,14 +5,14 @@ set:
   # - 2018-01-06
   # - 2018-01-07
   station_dates:
-    - "2019-02-10"
+    - "2019-02-02"
 
   # 是否根据时间范围 和 乘车类型 购票
   # 否则将需要手动填写车次
   is_by_time: False
 
   # 列车类型: 高铁 G 动车 D 其它火车 O
-  train_types: [G,D,O]
+  train_types: [O]
 
   # 可接受最早出发时间 格式ex：
   # departure_time: "8:00"
@@ -30,13 +30,13 @@ set:
   # - "G1353"
   # - "G1329"
   station_trains:
-    - "K1505"
+    - "K1506"
 
   # 出发城市，比如深圳北，就填深圳就搜得到
-  from_station: "沈丘"
+  from_station: "南京"
 
   # 到达城市 比如深圳北，就填深圳就搜得到
-  to_station: "南京"
+  to_station: "沈丘"
 
   # 座位(list) 多个座位ex:
   # - "商务座"
@@ -51,7 +51,6 @@ set:
   set_type:
     - "软卧"
     - "硬卧"
-    - "硬座"
 
   # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
   is_more_ticket: True
@@ -71,15 +70,15 @@ set:
 ticket_black_list_time: 5
 
 # 自动打码
-is_auto_code: False
+is_auto_code: True
 
 # 打码平台， 2 为若快平台（目前只支持若快平台打码，打码兔已经关闭）, 若快注册地址：http://www.ruokuai.com/client/index?6726
 auto_code_type: 2
 
 # 打码平台账号
 auto_code_account:
-  user: "931128603"
-  pwd: ""
+  user: "tingyugetc"
+  pwd: "136414tingyugetc"
 
 #  邮箱配置，如果抢票成功，将通过邮件配置通知给您
 #  列举163
